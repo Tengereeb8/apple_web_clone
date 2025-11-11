@@ -17,6 +17,7 @@ body {
   background-color: #f5f5f7;
   height: 48px;
   padding: 0 16px;
+  width: 100%;
 }
 
 .logo {
@@ -77,9 +78,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 /* ----- DESKTOP VIEW ----- */
-@media (min-width: 768px) {
+@media (min-width: 1920px) {
   .ul {
     display: flex; /* show links */
   }
@@ -89,6 +91,16 @@ body {
   }
   .app {
     display: flex;
+  }
+  /* .airpod {
+    background-image: url(headphone.png);
+  } */
+  .apple-tv {
+    height: 668px;
+    width: 100%;
+  }
+  .watch {
+    background-image: url(watch.png);
   }
 }
 
@@ -102,7 +114,7 @@ body {
 }
 .or16 {
   background-image: url(upor16.jpg);
-  width: 390px;
+  width: 100%;
   height: 500px;
   background-position: center;
   opacity: 1;
@@ -135,6 +147,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .buy {
   /* background-color: #0071e3; */
@@ -146,12 +159,15 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid #2997ff;
+  cursor: pointer;
 }
 .bl16 {
   background-image: url(upbl16.png);
-  width: 390px;
+  width: 100%;
   height: 500px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 1;
   margin: 0 auto;
   color: white;
@@ -172,6 +188,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .buy2 {
   /* background-color: #0071e3; */
@@ -183,10 +200,13 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid white;
+  cursor: pointer;
 }
 .ipad {
   background-image: url(ipad.png);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 580px;
   opacity: 1;
@@ -227,10 +247,12 @@ body {
   font-size: 30px;
 }
 .airpod {
-  background-image: url(airpod.png);
+  background-image: url(airpod1.png);
   width: 100%;
   height: 500px;
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 1;
   margin: 0 auto;
   color: white;
@@ -248,6 +270,8 @@ body {
   width: 100%;
   height: 500px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 1;
   margin: 0 auto;
   color: black;
@@ -263,12 +287,15 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 12px;
 }
 .macbook {
-  background-image: url(bookair.png);
+  background-image: url(bookair1.png);
   width: 100%;
   height: 500px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 1;
   margin: 0 auto;
   color: black;
@@ -286,6 +313,8 @@ body {
   width: 100%;
   height: 500px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 1;
   margin: 0 auto;
   color: black;
@@ -298,11 +327,47 @@ body {
   padding-top: 35px;
   background-repeat: no-repeat;
 }
+.dis {
+  display: block;
+}
+.dis1 {
+  display: none;
+}
+.dis2 {
+  display: none;
+}
+.hel2 {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  background-position: center;
+  background: linear-gradient(
+    90.43deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  width: auto; /* Let text width adjust naturally */
+  justify-content: center;
+  align-items: flex-end;
+  height: 334px;
+  padding-bottom: 20px;
+}
+.text2 {
+  font-weight: 700;
+  font-size: 30px;
+}
 .carry {
   background-image: url(carry.png);
   width: 100%;
   height: 500px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 1;
   margin: 0 auto;
   color: black;
@@ -324,12 +389,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .iphone {
   background-image: url(iphone.png);
   width: 100%;
   height: 500px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 1;
   margin: 0 auto;
   color: black;
@@ -339,7 +407,7 @@ body {
   justify-content: flex-start;
   text-align: center;
   gap: 20px;
-  padding-bottom: 35px;
+  padding-top: 35px;
   background-position: no-repeat;
 }
 .get {
@@ -351,8 +419,162 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-@media (min-width: 390px) {
+.apple-tv {
+  height: 668px;
+  width: 100%;
+  color: white;
+  flex-shrink: 0;
+  font-size: 20px;
+  position: relative;
+  scroll-snap-align: center;
+  background: var(--background-image) center / cover no-repeat;
+  gap: 12px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.napo {
+  background-image: url(napo.jpg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+}
+.stream {
+  background-color: white;
+  color: black;
+  border-radius: 999px;
+  width: 133px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.bad {
+  background-image: url(badmonkey.jpg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+}
+.ins {
+  background-image: url(thein.jpg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+  background-size: cover;
+}
+.k {
+  background-image: url(k-pop.jpeg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+  background-size: cover;
+}
+.mls {
+  background-image: url(mls.jpeg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+  background-size: cover;
+}
+.presume {
+  background-image: url(presumed.jpg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+  background-size: cover;
+}
+.pachinko {
+  background-image: url(pachinko.jpeg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+  background-size: cover;
+}
+.mlb {
+  background-image: url(mlb.jpeg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+  background-size: cover;
+}
+.la {
+  background-image: url(la.jpeg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+  background-size: cover;
+}
+.morning {
+  background-image: url(morning.jpeg);
+  width: 100%;
+  height: 368px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 58px;
+  background-size: cover;
+}
+@media (min-width: 768px) {
   .or16 {
     background-image: url(16or.png);
     width: 100%;
@@ -410,7 +632,59 @@ body {
     padding: 12px;
   }
   .ipad {
-    width: 768px;
-    height: 650px;
+    display: none;
+  }
+  .apple-tv {
+    width: 100%;
+    height: 368px;
+  }
+  .airpod {
+    background-image: url(airpod.jpg);
+  }
+  .watch {
+    background-image: url(watch.png);
+  }
+  .carry {
+    background-image: url(card.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+  .macbook {
+    background-image: url(bookair.png);
+  }
+  .emoji {
+    background-image: url(ipad.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* opacity: 1; */
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    background-size: cover;
+    /* margin: 12px; */
+    padding-top: 36px;
+    /* gap: 20px; */
+  }
+  .dis {
+    display: none;
+  }
+  .dis1 {
+    display: block;
+  }
+  .dis2 {
+    display: block;
+    align-content: flex-start;
   }
 }
